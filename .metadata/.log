@@ -1,0 +1,367 @@
+!SESSION 2017-07-12 19:20:10.544 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 7 amd64-64 Compressed References 20160210_289934 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR2_20160210_1617_B289934
+JIT  - tr.r14.java_20151209_107110.04
+GC   - R28_Java8_SR2_20160210_1617_B289934_CMPRSS
+J9CL - 20160210_289934
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_CH
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\SRDEV\Java\eclipse\mk_laser -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.ibm.issw.migr.osgi.liberty 4 0 2017-07-12 19:20:12.190
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.liberty. The component header value is wsadmin.xml
+
+!ENTRY com.ibm.issw.migr.osgi.liberty 4 0 2017-07-12 19:20:12.191
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.liberty. The component header value is wsadmin.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig 4 0 2017-07-12 19:20:12.192
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig 4 0 2017-07-12 19:20:12.192
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.jboss 4 0 2017-07-12 19:20:12.193
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.jboss. The component header value is component.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.jboss 4 0 2017-07-12 19:20:12.193
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.jboss. The component header value is component.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.was 4 0 2017-07-12 19:20:12.194
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.was. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.was 4 0 2017-07-12 19:20:12.195
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.was. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.wls 4 0 2017-07-12 19:20:12.195
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.wls. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.wls 4 0 2017-07-12 19:20:12.196
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.wls. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wsadmin 4 0 2017-07-12 19:20:12.196
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wsadmin. The component header value is wsadmin.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wsadmin 4 0 2017-07-12 19:20:12.197
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wsadmin. The component header value is wsadmin.xml
+
+!ENTRY com.ibm.issw.migr.osgi.liberty 4 0 2017-07-12 19:20:12.209
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.liberty. The component header value is wsadmin.xml
+
+!ENTRY com.ibm.issw.migr.osgi.liberty 4 0 2017-07-12 19:20:12.210
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.liberty. The component header value is wsadmin.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig 4 0 2017-07-12 19:20:12.211
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig 4 0 2017-07-12 19:20:12.211
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.was 4 0 2017-07-12 19:20:12.212
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.was. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.was 4 0 2017-07-12 19:20:12.212
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.was. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.wls 4 0 2017-07-12 19:20:12.213
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.wls. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.wls 4 0 2017-07-12 19:20:12.213
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.wls. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wsadmin 4 0 2017-07-12 19:20:12.214
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wsadmin. The component header value is wsadmin.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wsadmin 4 0 2017-07-12 19:20:12.214
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wsadmin. The component header value is wsadmin.xml
+
+!ENTRY org.eclipse.jface 2 0 2017-07-12 19:20:14.743
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-07-12 19:20:14.743
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b1f0312c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@8a446df4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2017-07-12 19:20:16.032
+!MESSAGE Referenced part does not exist yet: com.ibm.etools.ui.navigator.SDExplorer.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2017-07-12 19:20:19.983
+!MESSAGE Attempt to redefine project facet action "cloudfoundry.standalone.app#1.0#INSTALL" in plugin org.eclipse.cft.server.standalone.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2017-07-12 19:20:19.984
+!MESSAGE Attempt to redefine project facet action "cloudfoundry.standalone.app#1.0#UNINSTALL" in plugin org.eclipse.cft.server.standalone.core.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-07-12 19:20:21.574
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\s3qh78'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2017-07-12 19:20:21.993
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is: 
+	java.security.cert.CertPathValidatorException: The certificate issued by CN=Swiss Re Root CA 2, O=Swiss Re, C=CH is not trusted; internal cause is: 
+	java.security.cert.CertPathValidatorException: Certificate chaining error. ; version: 1.100.0.v20160217-0435
+!STACK 0
+javax.net.ssl.SSLHandshakeException: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is: 
+	java.security.cert.CertPathValidatorException: The certificate issued by CN=Swiss Re Root CA 2, O=Swiss Re, C=CH is not trusted; internal cause is: 
+	java.security.cert.CertPathValidatorException: Certificate chaining error
+	at com.ibm.jsse2.j.a(j.java:31)
+	at com.ibm.jsse2.as.a(as.java:262)
+	at com.ibm.jsse2.C.a(C.java:515)
+	at com.ibm.jsse2.C.a(C.java:11)
+	at com.ibm.jsse2.D.a(D.java:720)
+	at com.ibm.jsse2.D.a(D.java:635)
+	at com.ibm.jsse2.C.r(C.java:44)
+	at com.ibm.jsse2.C.a(C.java:184)
+	at com.ibm.jsse2.as.a(as.java:481)
+	at com.ibm.jsse2.as.i(as.java:130)
+	at com.ibm.jsse2.as.a(as.java:483)
+	at com.ibm.jsse2.as.startHandshake(as.java:160)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:290)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.upgrade(HttpClientConnectionOperator.java:175)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.upgrade(PoolingHttpClientConnectionManager.java:334)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:398)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is: 
+	java.security.cert.CertPathValidatorException: The certificate issued by CN=Swiss Re Root CA 2, O=Swiss Re, C=CH is not trusted; internal cause is: 
+	java.security.cert.CertPathValidatorException: Certificate chaining error
+	at com.ibm.jsse2.util.f.a(f.java:21)
+	at com.ibm.jsse2.util.f.b(f.java:86)
+	at com.ibm.jsse2.util.e.a(e.java:19)
+	at com.ibm.jsse2.aA.a(aA.java:204)
+	at com.ibm.jsse2.aA.a(aA.java:160)
+	at com.ibm.jsse2.aA.checkServerTrusted(aA.java:207)
+	at com.ibm.jsse2.D.a(D.java:67)
+	... 25 more
+Caused by: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is: 
+	java.security.cert.CertPathValidatorException: The certificate issued by CN=Swiss Re Root CA 2, O=Swiss Re, C=CH is not trusted; internal cause is: 
+	java.security.cert.CertPathValidatorException: Certificate chaining error
+	at com.ibm.security.cert.PKIXCertPathBuilderImpl.engineBuild(PKIXCertPathBuilderImpl.java:422)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:268)
+	at com.ibm.jsse2.util.f.a(f.java:153)
+	... 31 more
+Caused by: java.security.cert.CertPathValidatorException: The certificate issued by CN=Swiss Re Root CA 2, O=Swiss Re, C=CH is not trusted; internal cause is: 
+	java.security.cert.CertPathValidatorException: Certificate chaining error
+	at com.ibm.security.cert.BasicChecker.<init>(BasicChecker.java:111)
+	at com.ibm.security.cert.PKIXCertPathValidatorImpl.engineValidate(PKIXCertPathValidatorImpl.java:199)
+	at com.ibm.security.cert.PKIXCertPathBuilderImpl.myValidator(PKIXCertPathBuilderImpl.java:749)
+	at com.ibm.security.cert.PKIXCertPathBuilderImpl.buildCertPath(PKIXCertPathBuilderImpl.java:661)
+	at com.ibm.security.cert.PKIXCertPathBuilderImpl.buildCertPath(PKIXCertPathBuilderImpl.java:607)
+	at com.ibm.security.cert.PKIXCertPathBuilderImpl.buildCertPath(PKIXCertPathBuilderImpl.java:607)
+	at com.ibm.security.cert.PKIXCertPathBuilderImpl.buildCertPath(PKIXCertPathBuilderImpl.java:607)
+	at com.ibm.security.cert.PKIXCertPathBuilderImpl.engineBuild(PKIXCertPathBuilderImpl.java:368)
+	... 33 more
+Caused by: java.security.cert.CertPathValidatorException: Certificate chaining error
+	at com.ibm.security.cert.CertPathUtil.findIssuer(CertPathUtil.java:316)
+	at com.ibm.security.cert.BasicChecker.<init>(BasicChecker.java:108)
+	... 40 more
+!SESSION 2017-07-12 19:21:06.538 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 7 amd64-64 Compressed References 20160210_289934 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR2_20160210_1617_B289934
+JIT  - tr.r14.java_20151209_107110.04
+GC   - R28_Java8_SR2_20160210_1617_B289934_CMPRSS
+J9CL - 20160210_289934
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_CH
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.ibm.issw.migr.osgi.liberty 4 0 2017-07-12 19:21:08.232
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.liberty. The component header value is wsadmin.xml
+
+!ENTRY com.ibm.issw.migr.osgi.liberty 4 0 2017-07-12 19:21:08.233
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.liberty. The component header value is wsadmin.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig 4 0 2017-07-12 19:21:08.234
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig 4 0 2017-07-12 19:21:08.234
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.jboss 4 0 2017-07-12 19:21:08.235
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.jboss. The component header value is component.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.jboss 4 0 2017-07-12 19:21:08.236
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.jboss. The component header value is component.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.was 4 0 2017-07-12 19:21:08.237
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.was. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.was 4 0 2017-07-12 19:21:08.237
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.was. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.wls 4 0 2017-07-12 19:21:08.239
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.wls. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.wls 4 0 2017-07-12 19:21:08.239
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.wls. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wsadmin 4 0 2017-07-12 19:21:08.240
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wsadmin. The component header value is wsadmin.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wsadmin 4 0 2017-07-12 19:21:08.240
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wsadmin. The component header value is wsadmin.xml
+
+!ENTRY com.ibm.issw.migr.osgi.liberty 4 0 2017-07-12 19:21:08.251
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.liberty. The component header value is wsadmin.xml
+
+!ENTRY com.ibm.issw.migr.osgi.liberty 4 0 2017-07-12 19:21:08.251
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.liberty. The component header value is wsadmin.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig 4 0 2017-07-12 19:21:08.252
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig 4 0 2017-07-12 19:21:08.252
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.was 4 0 2017-07-12 19:21:08.253
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.was. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.was 4 0 2017-07-12 19:21:08.253
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.was. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.wls 4 0 2017-07-12 19:21:08.254
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.wls. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.wls 4 0 2017-07-12 19:21:08.255
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wasconfig.wls. The component header value is cell.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wsadmin 4 0 2017-07-12 19:21:08.256
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wsadmin. The component header value is wsadmin.xml
+
+!ENTRY com.ibm.issw.migr.osgi.wsadmin 4 0 2017-07-12 19:21:08.256
+!MESSAGE [SCR] Component definition XMLs not found in bundle com.ibm.issw.migr.osgi.wsadmin. The component header value is wsadmin.xml
+
+!ENTRY org.eclipse.jface 2 0 2017-07-12 19:21:46.728
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-07-12 19:21:46.728
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@753287f3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@64c77b99,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-07-12 19:21:50.278
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\s3qh78'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2017-07-12 19:21:50.678
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is: 
+	java.security.cert.CertPathValidatorException: The certificate issued by CN=Swiss Re Root CA 2, O=Swiss Re, C=CH is not trusted; internal cause is: 
+	java.security.cert.CertPathValidatorException: Certificate chaining error. ; version: 1.100.0.v20160217-0435
+!STACK 0
+javax.net.ssl.SSLHandshakeException: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is: 
+	java.security.cert.CertPathValidatorException: The certificate issued by CN=Swiss Re Root CA 2, O=Swiss Re, C=CH is not trusted; internal cause is: 
+	java.security.cert.CertPathValidatorException: Certificate chaining error
+	at com.ibm.jsse2.j.a(j.java:31)
+	at com.ibm.jsse2.as.a(as.java:262)
+	at com.ibm.jsse2.C.a(C.java:515)
+	at com.ibm.jsse2.C.a(C.java:11)
+	at com.ibm.jsse2.D.a(D.java:720)
+	at com.ibm.jsse2.D.a(D.java:635)
+	at com.ibm.jsse2.C.r(C.java:44)
+	at com.ibm.jsse2.C.a(C.java:184)
+	at com.ibm.jsse2.as.a(as.java:481)
+	at com.ibm.jsse2.as.i(as.java:130)
+	at com.ibm.jsse2.as.a(as.java:483)
+	at com.ibm.jsse2.as.startHandshake(as.java:160)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:290)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.upgrade(HttpClientConnectionOperator.java:175)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.upgrade(PoolingHttpClientConnectionManager.java:334)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:398)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is: 
+	java.security.cert.CertPathValidatorException: The certificate issued by CN=Swiss Re Root CA 2, O=Swiss Re, C=CH is not trusted; internal cause is: 
+	java.security.cert.CertPathValidatorException: Certificate chaining error
+	at com.ibm.jsse2.util.f.a(f.java:21)
+	at com.ibm.jsse2.util.f.b(f.java:86)
+	at com.ibm.jsse2.util.e.a(e.java:19)
+	at com.ibm.jsse2.aA.a(aA.java:204)
+	at com.ibm.jsse2.aA.a(aA.java:160)
+	at com.ibm.jsse2.aA.checkServerTrusted(aA.java:207)
+	at com.ibm.jsse2.D.a(D.java:67)
+	... 25 more
+Caused by: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is: 
+	java.security.cert.CertPathValidatorException: The certificate issued by CN=Swiss Re Root CA 2, O=Swiss Re, C=CH is not trusted; internal cause is: 
+	java.security.cert.CertPathValidatorException: Certificate chaining error
+	at com.ibm.security.cert.PKIXCertPathBuilderImpl.engineBuild(PKIXCertPathBuilderImpl.java:422)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:268)
+	at com.ibm.jsse2.util.f.a(f.java:153)
+	... 31 more
+Caused by: java.security.cert.CertPathValidatorException: The certificate issued by CN=Swiss Re Root CA 2, O=Swiss Re, C=CH is not trusted; internal cause is: 
+	java.security.cert.CertPathValidatorException: Certificate chaining error
+	at com.ibm.security.cert.BasicChecker.<init>(BasicChecker.java:111)
+	at com.ibm.security.cert.PKIXCertPathValidatorImpl.engineValidate(PKIXCertPathValidatorImpl.java:199)
+	at com.ibm.security.cert.PKIXCertPathBuilderImpl.myValidator(PKIXCertPathBuilderImpl.java:749)
+	at com.ibm.security.cert.PKIXCertPathBuilderImpl.buildCertPath(PKIXCertPathBuilderImpl.java:661)
+	at com.ibm.security.cert.PKIXCertPathBuilderImpl.buildCertPath(PKIXCertPathBuilderImpl.java:607)
+	at com.ibm.security.cert.PKIXCertPathBuilderImpl.buildCertPath(PKIXCertPathBuilderImpl.java:607)
+	at com.ibm.security.cert.PKIXCertPathBuilderImpl.buildCertPath(PKIXCertPathBuilderImpl.java:607)
+	at com.ibm.security.cert.PKIXCertPathBuilderImpl.engineBuild(PKIXCertPathBuilderImpl.java:368)
+	... 33 more
+Caused by: java.security.cert.CertPathValidatorException: Certificate chaining error
+	at com.ibm.security.cert.CertPathUtil.findIssuer(CertPathUtil.java:316)
+	at com.ibm.security.cert.BasicChecker.<init>(BasicChecker.java:108)
+	... 40 more
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2017-07-12 19:21:51.878
+!MESSAGE Attempt to redefine project facet action "cloudfoundry.standalone.app#1.0#INSTALL" in plugin org.eclipse.cft.server.standalone.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2017-07-12 19:21:51.892
+!MESSAGE Attempt to redefine project facet action "cloudfoundry.standalone.app#1.0#UNINSTALL" in plugin org.eclipse.cft.server.standalone.

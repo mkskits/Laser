@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/SRDEV/ide/eclipse/plugins/org.eclipse.osgi_3.10.102.v20160118-1700.jar" sourcepath="C:/SRDEV/ide/eclipse/plugins/org.eclipse.osgi_3.10.102.v20160118-1700.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/ide/eclipse/plugins/org.eclipse.core.commands_3.7.0.v20150422-0725.jar" sourcepath="C:/SRDEV/ide/eclipse/plugins/org.eclipse.core.commands_3.7.0.v20150422-0725.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/ide/eclipse/plugins/org.eclipse.equinox.common_3.7.0.v20150402-1709.jar" sourcepath="C:/SRDEV/ide/eclipse/plugins/org.eclipse.equinox.common_3.7.0.v20150402-1709.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/ide/eclipse/plugins/org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar" sourcepath="C:/SRDEV/ide/eclipse/plugins/org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/ide/eclipse/plugins/org.eclipse.core.runtime_3.11.1.v20150903-1804.jar" sourcepath="C:/SRDEV/ide/eclipse/plugins/org.eclipse.core.runtime_3.11.1.v20150903-1804.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/ide/eclipse/plugins/org.eclipse.text_3.5.400.v20150505-1044.jar" sourcepath="C:/SRDEV/ide/eclipse/plugins/org.eclipse.text_3.5.400.v20150505-1044.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/ide/eclipse/plugins/org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar" sourcepath="C:/SRDEV/ide/eclipse/plugins/org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/ide/eclipse/plugins/org.eclipse.jface_3.11.1.v20160128-1644.jar" sourcepath="C:/SRDEV/ide/eclipse/plugins/org.eclipse.jface_3.11.1.v20160128-1644.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/ide/eclipse/plugins/org.eclipse.jface.text_3.10.0.v20150603-1752.jar" sourcepath="C:/SRDEV/ide/eclipse/plugins/org.eclipse.jface.text_3.10.0.v20150603-1752.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/ide/eclipse/plugins/org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar" sourcepath="C:/SRDEV/ide/eclipse/plugins/org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/ide/eclipse/plugins/com.ibm.icu_54.1.1.v201501272100.jar" sourcepath="C:/SRDEV/ide/eclipse/plugins/com.ibm.icu_54.1.1.v201501272100.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/ide/eclipse/plugins/org.eclipse.ui.forms_3.6.200.v20150506-2029.jar" sourcepath="C:/SRDEV/ide/eclipse/plugins/org.eclipse.ui.forms_3.6.200.v20150506-2029.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/lib/blpapi3.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/blpapi-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/blpapi-examples-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/CorrelationExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/IntradayBarExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/IntradayTickExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/NameEnumerationExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/RefDataExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/SecurityLookupExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/ServiceSchemaDump-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/SimpleBlockingRequestExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/SimpleCategorizedFieldSearchExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/SimpleFieldInfoExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/SimpleFieldListExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/SimpleFieldSearchExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/SimpleHistoryExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/SimpleIntradayBarExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/SimpleIntradayTickExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/SimpleRefDataExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/SimpleRefDataOverrideExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/SimpleSubscriptionExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/SimpleSubscriptionIntervalExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/SubscriptionCorrelationExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/APIv3/JavaAPI/v3.11.1.1/bin/SubscriptionWithEventHandlerExample-3.11.1-1.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/jBloomberg-master.zip"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/jBloomberg-master/src/main/java/com/assylias/jbloomberg"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/guava-r05.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/jcl-over-slf4j-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/jcl-over-slf4j-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/jul-to-slf4j-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/jul-to-slf4j-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/log4j-over-slf4j-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/log4j-over-slf4j-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/osgi-over-slf4j-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/osgi-over-slf4j-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-android-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-android-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-api-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-ext-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-ext-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-jcl-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-jcl-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-jdk14-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-jdk14-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-log4j12-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-log4j12-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-migrator-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-nop-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-nop-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-simple-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s3qh78/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-simple-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/SRDEV/DAPI/AA_JAVA/blpapi3.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
