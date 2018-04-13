@@ -1,79 +1,16 @@
 package laser;
 
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JTextPane;
-import java.awt.BorderLayout;
-import javax.swing.UIManager;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Window.Type;
-import javax.swing.DropMode;
-import org.eclipse.swt.events.KeyAdapter;
-import org.eclipse.swt.events.KeyEvent;
-import org.eclipse.swt.SWT;
-import javax.swing.JPanel;
-import javax.swing.JInternalFrame;
 import javax.swing.JFormattedTextField;
-
-import java.awt.Toolkit;
-import java.awt.datatransfer.FlavorEvent;
-import java.awt.datatransfer.FlavorListener;
-import java.awt.datatransfer.UnsupportedFlavorException;
-import java.io.File;
 import java.io.IOException;
-import java.awt.Toolkit;
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.DataFlavor;
-import java.awt.Panel;
-
-import java.util.ArrayList;
-
-import com.bloomberglp.blpapi.Datetime;
-import com.bloomberglp.blpapi.Element;
-import com.bloomberglp.blpapi.Event;
-import com.bloomberglp.blpapi.Message;
-import com.bloomberglp.blpapi.MessageIterator;
-import com.bloomberglp.blpapi.Request;
-import com.bloomberglp.blpapi.Service;
-import com.bloomberglp.blpapi.Session;
-import com.bloomberglp.blpapi.SessionOptions;
-import com.bloomberglp.blpapi.Schema.Datatype;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
-import com.bloomberglp.blpapi.Datetime;
-import com.bloomberglp.blpapi.Event;
-import com.bloomberglp.blpapi.Element;
-import com.bloomberglp.blpapi.InvalidRequestException;
-import com.bloomberglp.blpapi.Logging;
-import com.bloomberglp.blpapi.Message;
-import com.bloomberglp.blpapi.MessageIterator;
-import com.bloomberglp.blpapi.Name;
-import com.bloomberglp.blpapi.Request;
-import com.bloomberglp.blpapi.Service;
-import com.bloomberglp.blpapi.Session;
-import com.bloomberglp.blpapi.SessionOptions;
-
-import java.util.ArrayList;
-import java.util.logging.Level;
-
-import com.bloomberglp.blpapi.Datetime;
-import com.bloomberglp.blpapi.Event;
-import com.bloomberglp.blpapi.Element;
-import com.bloomberglp.blpapi.InvalidRequestException;
-import com.bloomberglp.blpapi.Logging;
-import com.bloomberglp.blpapi.Message;
-import com.bloomberglp.blpapi.MessageIterator;
-import com.bloomberglp.blpapi.Name;
-import com.bloomberglp.blpapi.Request;
-import com.bloomberglp.blpapi.Service;
-import com.bloomberglp.blpapi.Session;
-import com.bloomberglp.blpapi.SessionOptions;
-
-import com.bloomberglp.blpapi.Session;
 import javax.swing.JTextField;
 
 // import Bloomberg API
@@ -312,6 +249,14 @@ public class Laser {
 		frmLaser.getContentPane().add(txtpnCn);
 		txtpnCn.setColumns(10);
 		txtpnCn.setText("0");
+		
+		JButton btnNexHist = new JButton("NEX HIST");
+		btnNexHist.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNexHist.setBounds(346, 354, 89, 23);
+		frmLaser.getContentPane().add(btnNexHist);
 			
 		txtpnTest.addKeyListener(new java.awt.event.KeyAdapter() {
 			@Override
