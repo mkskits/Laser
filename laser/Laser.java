@@ -4,9 +4,12 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JTextPane;
 import java.awt.Color;
+import java.awt.Desktop;
 import java.awt.Font;
 import java.awt.Window.Type;
 import javax.swing.JFormattedTextField;
+
+import java.io.File;
 import java.io.IOException;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -327,6 +330,21 @@ public class Laser {
 		textPane_9.setBackground(Color.DARK_GRAY);
 		textPane_9.setBounds(0, 636, 435, 45);
 		frmLaser.getContentPane().add(textPane_9);
+		
+		JButton btnSrdev = new JButton("SRDEV");
+		btnSrdev.setMnemonic('s');
+		btnSrdev.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+				Desktop.getDesktop().open(new File("C:\\SRDEV"));
+				} catch (Exception f){
+					System.out.print("error in SRDEV");
+				}
+				
+			}
+		});
+		btnSrdev.setBounds(247, 682, 89, 23);
+		frmLaser.getContentPane().add(btnSrdev);
 			
 		txtpnTest.addKeyListener(new java.awt.event.KeyAdapter() {
 			@Override
