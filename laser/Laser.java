@@ -11,10 +11,20 @@ import javax.swing.JFormattedTextField;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URI;
+
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
+import java.awt.Panel;
+import javax.swing.Box;
+import javax.swing.JLabel;
+import com.jgoodies.forms.factories.DefaultComponentFactory;
+
+import java.awt.Desktop;
+import java.net.URI;
+// import java.net.URISyntaxExaception;
 
 // import Bloomberg API
 
@@ -22,6 +32,7 @@ public class Laser {
 
 	public String strClp;
 	public JFormattedTextField frmtdtxtfldTest;
+	public URI strUrlReports;
 	
 	private JFrame frmLaser;
 	private JTextField txtpnCn;
@@ -57,9 +68,9 @@ public class Laser {
 		frmLaser = new JFrame();
 		frmLaser.setType(Type.UTILITY);
 			
-		frmLaser.setTitle("laser");
+		frmLaser.setTitle("laser v0.24.5");
 		frmLaser.getContentPane().setFont(new Font("Arial", Font.PLAIN, 30));
-		frmLaser.setBounds(100, 100, 451, 810);
+		frmLaser.setBounds(100, 100, 451, 803);
 		frmLaser.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			
 		JTextPane txtpnTest2 = new JTextPane();
@@ -150,7 +161,7 @@ public class Laser {
 		textPaneBBG2.setForeground(Color.LIGHT_GRAY);
 		textPaneBBG2.setFont(new Font("Arial", Font.PLAIN, 12));
 		textPaneBBG2.setBackground(Color.DARK_GRAY);
-		textPaneBBG2.setBounds(0, 745, 151, 29);
+		textPaneBBG2.setBounds(0, 736, 151, 29);
 		textPaneBBG2.setCaretColor(Color.GREEN);
 		frmLaser.getContentPane().add(textPaneBBG2);
 		
@@ -159,7 +170,7 @@ public class Laser {
 		textPaneBBG1.setForeground(Color.LIGHT_GRAY);
 		textPaneBBG1.setFont(new Font("Arial", Font.PLAIN, 12));
 		textPaneBBG1.setBackground(Color.DARK_GRAY);
-		textPaneBBG1.setBounds(161, 745, 274, 29);
+		textPaneBBG1.setBounds(161, 736, 274, 29);
 		textPaneBBG1.setCaretColor(Color.GREEN);
 		frmLaser.getContentPane().add(textPaneBBG1);
 		
@@ -332,6 +343,7 @@ public class Laser {
 		frmLaser.getContentPane().add(textPane_9);
 		
 		JButton btnSrdev = new JButton("SRDEV");
+		btnSrdev.setBackground(Color.GREEN);
 		btnSrdev.setMnemonic('s');
 		btnSrdev.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -345,6 +357,43 @@ public class Laser {
 		});
 		btnSrdev.setBounds(247, 682, 89, 23);
 		frmLaser.getContentPane().add(btnSrdev);
+		
+		JLabel lblActive = DefaultComponentFactory.getInstance().createLabel("active");
+		lblActive.setFont(new Font("Tahoma", Font.ITALIC, 12));
+		lblActive.setBounds(10, 686, 40, 14);
+		frmLaser.getContentPane().add(lblActive);
+		
+		JButton btnReporting = new JButton("Reporting");
+		btnReporting.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Desktop d = Desktop.getDesktop();
+				try {
+				    d.browse(new URI("https://shp.swissre.com/sites/finace/_layouts/15/start.aspx#/Trading%20Reports/Forms/AllItems.aspx"));
+				} catch (Exception f){
+					System.out.print("error in SRDEV");
+				}
+			}
+		});
+		btnReporting.setMnemonic('r');
+		btnReporting.setBackground(Color.GRAY);
+		btnReporting.setBounds(53, 711, 89, 23);
+		frmLaser.getContentPane().add(btnReporting);
+		
+		JButton btnNCE = new JButton("NCE");
+		btnNCE.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Desktop d = Desktop.getDesktop();
+				try {
+				    d.browse(new URI("https://shp.swissre.com/sites/finace/_layouts/15/start.aspx#/Trading%20Reports/Forms/AllItems.aspx?RootFolder=%2Fsites%2Ffinace%2FTrading%20Reports%2FSecurities%20Lending%20%2D%20Counterparties%27%20Exposures%20plus%20NCE&FolderCTID=0x0120006F85F0A94F7C5C47A62459B6BEA39CA4&View=%7B5508DBB1%2DE856%2D4E47%2DA494%2DAE104B609F2F%7D"));
+				} catch (Exception f){
+					System.out.print("error in SRDEV");
+				}
+			}
+		});
+		btnNCE.setMnemonic('n');
+		btnNCE.setBackground(Color.GRAY);
+		btnNCE.setBounds(53, 682, 89, 23);
+		frmLaser.getContentPane().add(btnNCE);
 			
 		txtpnTest.addKeyListener(new java.awt.event.KeyAdapter() {
 			@Override
