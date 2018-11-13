@@ -3,6 +3,9 @@ package laser;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JTextPane;
+
+import org.eclipse.osgi.internal.debug.Debug;
+
 import java.awt.Color;
 import java.awt.Desktop;
 import java.awt.Font;
@@ -24,6 +27,14 @@ import com.jgoodies.forms.factories.DefaultComponentFactory;
 
 import java.awt.Desktop;
 import java.net.URI;
+// clipboard readers
+import java.awt.HeadlessException;
+import java.awt.Toolkit;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.util.concurrent.TimeUnit;
+import java.awt.Label;
+
 // import java.net.URISyntaxExaception;
 
 // import Bloomberg API
@@ -70,9 +81,24 @@ public class Laser {
 			
 		frmLaser.setTitle("laser v0.24.5");
 		frmLaser.getContentPane().setFont(new Font("Arial", Font.PLAIN, 30));
-		frmLaser.setBounds(100, 100, 451, 803);
+		frmLaser.setBounds(100, 100, 451, 1087);
 		frmLaser.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			
+		Label statusLabel = new Label("");
+		statusLabel.setBackground(Color.GREEN);
+		statusLabel.setForeground(Color.GREEN);
+		statusLabel.setBounds(27, 714, 17, 17);
+		frmLaser.getContentPane().add(statusLabel);
+		
+		JTextPane txtPnCommand = new JTextPane();
+		txtPnCommand.setText((String) null);
+		txtPnCommand.setForeground(Color.LIGHT_GRAY);
+		txtPnCommand.setFont(new Font("Arial", Font.PLAIN, 12));
+		txtPnCommand.setCaretColor(Color.GREEN);
+		txtPnCommand.setBackground(Color.DARK_GRAY);
+		txtPnCommand.setBounds(0, 807, 435, 252);
+		frmLaser.getContentPane().add(txtPnCommand);
+		
 		JTextPane txtpnTest2 = new JTextPane();
 		txtpnTest2.setFocusAccelerator('1');
 		txtpnTest2.setBounds(0, 47, 435, 45);
@@ -161,7 +187,7 @@ public class Laser {
 		textPaneBBG2.setForeground(Color.LIGHT_GRAY);
 		textPaneBBG2.setFont(new Font("Arial", Font.PLAIN, 12));
 		textPaneBBG2.setBackground(Color.DARK_GRAY);
-		textPaneBBG2.setBounds(0, 736, 151, 29);
+		textPaneBBG2.setBounds(0, 766, 151, 29);
 		textPaneBBG2.setCaretColor(Color.GREEN);
 		frmLaser.getContentPane().add(textPaneBBG2);
 		
@@ -170,7 +196,7 @@ public class Laser {
 		textPaneBBG1.setForeground(Color.LIGHT_GRAY);
 		textPaneBBG1.setFont(new Font("Arial", Font.PLAIN, 12));
 		textPaneBBG1.setBackground(Color.DARK_GRAY);
-		textPaneBBG1.setBounds(161, 736, 274, 29);
+		textPaneBBG1.setBounds(161, 766, 274, 29);
 		textPaneBBG1.setCaretColor(Color.GREEN);
 		frmLaser.getContentPane().add(textPaneBBG1);
 		
@@ -241,14 +267,21 @@ public class Laser {
 				params[1] = "/c";
 				params[2] = "C:/SRDEV/B_Bash/get_isin.bat";
 				try {
-					Runtime.getRuntime().exec(params);
-				} catch (IOException e1) {
+					statusLabel.setBackground(Color.RED);
+					Process p1 = Runtime.getRuntime().exec(params);
+					p1.waitFor();
+					TimeUnit.SECONDS.sleep(0);
+					String bbg_des_reply = (String) Toolkit.getDefaultToolkit().getSystemClipboard().getData(DataFlavor.stringFlavor);
+					Debug.println(bbg_des_reply);
+					textPaneBBG1.setText(bbg_des_reply);
+					statusLabel.setBackground(Color.GREEN);
+				} catch (IOException | HeadlessException | UnsupportedFlavorException | InterruptedException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 			}
 		});
-		btnSecDes.setMnemonic('s');
+		btnSecDes.setMnemonic('l');
 		btnSecDes.setBounds(247, 711, 89, 23);
 		frmLaser.getContentPane().add(btnSecDes);
 		
@@ -394,6 +427,56 @@ public class Laser {
 		btnNCE.setBackground(Color.GRAY);
 		btnNCE.setBounds(53, 682, 89, 23);
 		frmLaser.getContentPane().add(btnNCE);
+		
+		JButton btnOraise = new JButton("oraise");
+		btnOraise.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Desktop d = Desktop.getDesktop();
+				try {
+				    d.browse(new URI("https://service.oraise.com/Citrix/externWeb/"));
+				} catch (Exception f){
+					System.out.print("error in SRDEV");
+				}			
+			}
+		});
+		
+		btnOraise.setMnemonic('o');
+		btnOraise.setBackground(Color.GRAY);
+		btnOraise.setBounds(148, 682, 89, 23);
+		frmLaser.getContentPane().add(btnOraise);
+		
+		JButton btnAtx = new JButton("ATX");
+		btnAtx.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				statusLabel.setBackground(Color.RED);
+				Desktop d = Desktop.getDesktop();
+				try {
+				    d.browse(new URI("C:/temp/BlackRock/s5mkilch/packagedApps/SWISSRE/ATXL/Bin(x86)/ATX.xll"));
+				    statusLabel.setBackground(Color.GREEN);
+				    txtPnCommand.setText("ATX loaded");
+				} catch (Exception f){
+					System.out.print("error in ATX");
+					txtPnCommand.setText("Error in loading ATX");
+					statusLabel.setBackground(Color.ORANGE);
+				}
+			}
+		});
+		btnAtx.setMnemonic('a');
+		btnAtx.setBackground(Color.GRAY);
+		btnAtx.setBounds(346, 739, 89, 23);
+		frmLaser.getContentPane().add(btnAtx);
+		
+		JButton btnNewLine = new JButton("new line");
+		btnNewLine.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String txtCommand = txtPnCommand.getText();
+				txtPnCommand.setText(txtCommand += "ATX loaded \n");
+			}
+		});
+		btnNewLine.setMnemonic('n');
+		btnNewLine.setBackground(Color.GRAY);
+		btnNewLine.setBounds(247, 739, 89, 23);
+		frmLaser.getContentPane().add(btnNewLine);
 			
 		txtpnTest.addKeyListener(new java.awt.event.KeyAdapter() {
 			@Override
