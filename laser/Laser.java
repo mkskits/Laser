@@ -235,6 +235,8 @@ public class Laser {
 		btnAip.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Button AIP Pressed");
+				txtPnCommand.setText("AIP initiated");
+				statusLabel.setBackground(Color.RED);
 				runAIP();
 				String[] params = new String [3];
 				// params[0] = "C:/SRDEV/B_Bash/get_REPO_PX.bat";
@@ -244,12 +246,13 @@ public class Laser {
 				params[2] = "C:/SRDEV/B_Bash/get_REPO_PX.bat";
 				try {
 					Runtime.getRuntime().exec(params);
+					statusLabel.setBackground(Color.GREEN);
+					txtPnCommand.setText("AIP retrieval executed");
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 				//RefDataExample.aipp();
-				
 				String StrPanel1 = txtpnTest.getText();
 				System.out.println(StrPanel1);
 			}
@@ -309,7 +312,7 @@ public class Laser {
 		textPane_3.setText((String) null);
 		textPane_3.setForeground(Color.LIGHT_GRAY);
 		textPane_3.setFont(new Font("Arial", Font.PLAIN, 14));
-		textPane_3.setFocusAccelerator('6');
+		textPane_3.setFocusAccelerator('7');
 		textPane_3.setCaretColor(Color.GREEN);
 		textPane_3.setBackground(Color.DARK_GRAY);
 		textPane_3.setBounds(0, 334, 435, 45);
@@ -319,7 +322,7 @@ public class Laser {
 		textPane_4.setText((String) null);
 		textPane_4.setForeground(Color.LIGHT_GRAY);
 		textPane_4.setFont(new Font("Arial", Font.PLAIN, 14));
-		textPane_4.setFocusAccelerator('6');
+		textPane_4.setFocusAccelerator('8');
 		textPane_4.setCaretColor(Color.GREEN);
 		textPane_4.setBackground(Color.DARK_GRAY);
 		textPane_4.setBounds(0, 385, 435, 45);
@@ -329,7 +332,7 @@ public class Laser {
 		textPane_5.setText((String) null);
 		textPane_5.setForeground(Color.LIGHT_GRAY);
 		textPane_5.setFont(new Font("Arial", Font.PLAIN, 14));
-		textPane_5.setFocusAccelerator('6');
+		textPane_5.setFocusAccelerator('9');
 		textPane_5.setCaretColor(Color.GREEN);
 		textPane_5.setBackground(Color.DARK_GRAY);
 		textPane_5.setBounds(0, 435, 435, 45);
@@ -339,7 +342,6 @@ public class Laser {
 		textPane_6.setText((String) null);
 		textPane_6.setForeground(Color.LIGHT_GRAY);
 		textPane_6.setFont(new Font("Arial", Font.PLAIN, 14));
-		textPane_6.setFocusAccelerator('6');
 		textPane_6.setCaretColor(Color.GREEN);
 		textPane_6.setBackground(Color.DARK_GRAY);
 		textPane_6.setBounds(0, 485, 435, 45);
@@ -349,7 +351,6 @@ public class Laser {
 		textPane_7.setText((String) null);
 		textPane_7.setForeground(Color.LIGHT_GRAY);
 		textPane_7.setFont(new Font("Arial", Font.PLAIN, 14));
-		textPane_7.setFocusAccelerator('6');
 		textPane_7.setCaretColor(Color.GREEN);
 		textPane_7.setBackground(Color.DARK_GRAY);
 		textPane_7.setBounds(0, 535, 435, 45);
@@ -359,7 +360,6 @@ public class Laser {
 		textPane_8.setText((String) null);
 		textPane_8.setForeground(Color.LIGHT_GRAY);
 		textPane_8.setFont(new Font("Arial", Font.PLAIN, 14));
-		textPane_8.setFocusAccelerator('6');
 		textPane_8.setCaretColor(Color.GREEN);
 		textPane_8.setBackground(Color.DARK_GRAY);
 		textPane_8.setBounds(0, 585, 435, 45);
@@ -369,7 +369,6 @@ public class Laser {
 		textPane_9.setText((String) null);
 		textPane_9.setForeground(Color.LIGHT_GRAY);
 		textPane_9.setFont(new Font("Arial", Font.PLAIN, 14));
-		textPane_9.setFocusAccelerator('6');
 		textPane_9.setCaretColor(Color.GREEN);
 		textPane_9.setBackground(Color.DARK_GRAY);
 		textPane_9.setBounds(0, 636, 435, 45);
@@ -446,6 +445,7 @@ public class Laser {
 		frmLaser.getContentPane().add(btnOraise);
 		
 		JButton btnAtx = new JButton("ATX");
+		btnAtx.setMnemonic('t');
 		btnAtx.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				statusLabel.setBackground(Color.RED);
@@ -461,19 +461,18 @@ public class Laser {
 				}
 			}
 		});
-		btnAtx.setMnemonic('a');
 		btnAtx.setBackground(Color.GRAY);
 		btnAtx.setBounds(346, 739, 89, 23);
 		frmLaser.getContentPane().add(btnAtx);
 		
 		JButton btnNewLine = new JButton("new line");
+		btnNewLine.setMnemonic('e');
 		btnNewLine.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String txtCommand = txtPnCommand.getText();
 				txtPnCommand.setText(txtCommand += "ATX loaded \n");
 			}
 		});
-		btnNewLine.setMnemonic('n');
 		btnNewLine.setBackground(Color.GRAY);
 		btnNewLine.setBounds(247, 739, 89, 23);
 		frmLaser.getContentPane().add(btnNewLine);
