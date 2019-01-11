@@ -34,6 +34,8 @@ import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.util.concurrent.TimeUnit;
 import java.awt.Label;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 // import java.net.URISyntaxExaception;
 
@@ -203,6 +205,7 @@ public class Laser {
 		JTextPane textPane = new JTextPane();
 		textPane.setFocusAccelerator('4');
 		textPane.setText((String) null);
+		
 		textPane.setForeground(Color.LIGHT_GRAY);
 		textPane.setFont(new Font("Arial", Font.PLAIN, 14));
 		textPane.setBackground(Color.DARK_GRAY);
@@ -309,6 +312,13 @@ public class Laser {
 		frmLaser.getContentPane().add(btnNexHist);
 		
 		JTextPane textPane_3 = new JTextPane();
+		textPane_3.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				if(e.getKeyCode() == 27)
+					textPane_3.setText(null);
+			}
+		});
 		textPane_3.setText((String) null);
 		textPane_3.setForeground(Color.LIGHT_GRAY);
 		textPane_3.setFont(new Font("Arial", Font.PLAIN, 14));
@@ -319,6 +329,15 @@ public class Laser {
 		frmLaser.getContentPane().add(textPane_3);
 		
 		JTextPane textPane_4 = new JTextPane();
+		textPane_4.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				if(e.getKeyCode() == 27)
+				{
+					textPane_4.setText(null);
+				}
+			}
+		});
 		textPane_4.setText((String) null);
 		textPane_4.setForeground(Color.LIGHT_GRAY);
 		textPane_4.setFont(new Font("Arial", Font.PLAIN, 14));
@@ -329,6 +348,15 @@ public class Laser {
 		frmLaser.getContentPane().add(textPane_4);
 		
 		JTextPane textPane_5 = new JTextPane();
+		textPane_5.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				if(e.getKeyCode() == 27)
+				{
+					textPane_5.setText(null);
+				}
+			}
+		});
 		textPane_5.setText((String) null);
 		textPane_5.setForeground(Color.LIGHT_GRAY);
 		textPane_5.setFont(new Font("Arial", Font.PLAIN, 14));
@@ -339,6 +367,15 @@ public class Laser {
 		frmLaser.getContentPane().add(textPane_5);
 		
 		JTextPane textPane_6 = new JTextPane();
+		textPane_6.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				if(e.getKeyCode() == 27)
+				{
+					textPane_6.setText(null);
+				}
+			}
+		});
 		textPane_6.setText((String) null);
 		textPane_6.setForeground(Color.LIGHT_GRAY);
 		textPane_6.setFont(new Font("Arial", Font.PLAIN, 14));
@@ -348,6 +385,15 @@ public class Laser {
 		frmLaser.getContentPane().add(textPane_6);
 		
 		JTextPane textPane_7 = new JTextPane();
+		textPane_7.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				if(e.getKeyCode() == 27)
+				{
+					textPane_7.setText(null);
+				}
+			}
+		});
 		textPane_7.setText((String) null);
 		textPane_7.setForeground(Color.LIGHT_GRAY);
 		textPane_7.setFont(new Font("Arial", Font.PLAIN, 14));
@@ -357,6 +403,15 @@ public class Laser {
 		frmLaser.getContentPane().add(textPane_7);
 		
 		JTextPane textPane_8 = new JTextPane();
+		textPane_8.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				if(e.getKeyCode() == 27)
+				{
+					textPane_8.setText(null);
+				}
+			}
+		});
 		textPane_8.setText((String) null);
 		textPane_8.setForeground(Color.LIGHT_GRAY);
 		textPane_8.setFont(new Font("Arial", Font.PLAIN, 14));
@@ -366,6 +421,13 @@ public class Laser {
 		frmLaser.getContentPane().add(textPane_8);
 		
 		JTextPane textPane_9 = new JTextPane();
+		textPane_9.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				if(e.getKeyCode() == 27)
+					textPane_9.setText(null);
+			}
+		});
 		textPane_9.setText((String) null);
 		textPane_9.setForeground(Color.LIGHT_GRAY);
 		textPane_9.setFont(new Font("Arial", Font.PLAIN, 14));
