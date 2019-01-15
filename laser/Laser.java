@@ -538,6 +538,18 @@ public class Laser {
 		btnNewLine.setBackground(Color.GRAY);
 		btnNewLine.setBounds(247, 739, 89, 23);
 		frmLaser.getContentPane().add(btnNewLine);
+		
+		JButton btnTiles = new JButton("tiles");
+		btnTiles.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				// placeholder today
+				
+			}
+		});
+		btnTiles.setMnemonic('t');
+		btnTiles.setBackground(Color.GREEN);
+		btnTiles.setBounds(148, 739, 89, 23);
+		frmLaser.getContentPane().add(btnTiles);
 			
 		txtpnTest.addKeyListener(new java.awt.event.KeyAdapter() {
 			@Override
