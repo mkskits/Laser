@@ -36,6 +36,12 @@ import java.util.concurrent.TimeUnit;
 import java.awt.Label;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import com.sun.jna.Library;
+import com.sun.jna.Native;
+import com.sun.jna.Platform;
+import com.sun.jna.platform.win32.User32;
+import com.sun.jna.platform.win32.WinDef;
+import com.sun.jna.platform.win32.WinUser;
 
 // import java.net.URISyntaxExaception;
 
@@ -539,14 +545,26 @@ public class Laser {
 		btnNewLine.setBounds(247, 739, 89, 23);
 		frmLaser.getContentPane().add(btnNewLine);
 		
-		JButton btnTiles = new JButton("tiles");
+		JButton btnTiles = new JButton("bash");
 		btnTiles.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// placeholder today
-				
+				try {
+					WinDef.HWND hWnd = User32.INSTANCE.FindWindow("ConsoleWindowClass", "C:\\WINDOWS\\system32\\cmd.exe");
+					// WinDef.HWND hWnd = User32.INSTANCE.FindWindow("SunAwtFrame", "[PRODUCTION] Firebird - Version 1.5.0.7");
+					User32.INSTANCE.ShowWindow(hWnd, WinUser.SW_RESTORE);
+					User32.INSTANCE.SetForegroundWindow(hWnd);
+					String strCmnd = new String();
+					strCmnd = txtPnCommand.getText();
+					strCmnd = strCmnd + "\n" + "bash activated";  
+					txtPnCommand.setText(strCmnd);							
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		});
-		btnTiles.setMnemonic('t');
+		btnTiles.setMnemonic('b');
 		btnTiles.setBackground(Color.GREEN);
 		btnTiles.setBounds(148, 739, 89, 23);
 		frmLaser.getContentPane().add(btnTiles);
