@@ -20,13 +20,13 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
-import java.awt.Panel;
-import javax.swing.Box;
+//import java.awt.Panel;
+//import javax.swing.Box;
 import javax.swing.JLabel;
 import com.jgoodies.forms.factories.DefaultComponentFactory;
 
-import java.awt.Desktop;
-import java.net.URI;
+//import java.awt.Desktop;
+//import java.net.URI;
 // clipboard readers
 import java.awt.HeadlessException;
 import java.awt.Toolkit;
@@ -36,9 +36,9 @@ import java.util.concurrent.TimeUnit;
 import java.awt.Label;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import com.sun.jna.Library;
-import com.sun.jna.Native;
-import com.sun.jna.Platform;
+//import com.sun.jna.Library;
+//import com.sun.jna.Native;
+//import com.sun.jna.Platform;
 import com.sun.jna.platform.win32.User32;
 import com.sun.jna.platform.win32.WinDef;
 import com.sun.jna.platform.win32.WinUser;
@@ -50,14 +50,16 @@ import com.sun.jna.platform.win32.WinUser;
 public class Laser {
 
 	public String strClp;
+	public String strBashScriptLocation;
 	public JFormattedTextField frmtdtxtfldTest;
 	public URI strUrlReports;
+	
 	
 	private JFrame frmLaser;
 	private JTextField txtpnCn;
 
 	public static void main(String[] args) {
-	
+		String strBashScriptLocation = new String("C:/SRDEV/B_Bash/");
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -255,6 +257,7 @@ public class Laser {
 				params[2] = "C:/SRDEV/B_Bash/get_REPO_PX.bat";
 				try {
 					Runtime.getRuntime().exec(params);
+					
 					statusLabel.setBackground(Color.GREEN);
 					txtPnCommand.setText("AIP retrieval executed");
 				} catch (IOException e1) {
@@ -568,6 +571,31 @@ public class Laser {
 		btnTiles.setBackground(Color.GREEN);
 		btnTiles.setBounds(148, 739, 89, 23);
 		frmLaser.getContentPane().add(btnTiles);
+		
+		JButton btnBbgDataDump = new JButton("BBG Data");
+		btnBbgDataDump.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Button BBG Retrieve Pressed");
+				txtPnCommand.setText("BBG Data Dump initiated");
+				statusLabel.setBackground(Color.RED);
+				try {
+			           Runtime.getRuntime().exec(new String[] {"cmd", "/C", "Start", "C:/SRDEV/B_Bash/bbg_bar.bat"}); 
+					statusLabel.setBackground(Color.GREEN);
+					txtPnCommand.setText("BBG Data Dump executed");
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				//RefDataExample.aipp();
+				String StrPanel1 = txtpnTest.getText();
+				System.out.println(StrPanel1);
+			}
+		});
+		btnBbgDataDump.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		btnBbgDataDump.setMnemonic('b');
+		btnBbgDataDump.setBackground(Color.GREEN);
+		btnBbgDataDump.setBounds(53, 739, 89, 23);
+		frmLaser.getContentPane().add(btnBbgDataDump);
 			
 		txtpnTest.addKeyListener(new java.awt.event.KeyAdapter() {
 			@Override
