@@ -15,6 +15,7 @@ import javax.swing.JFormattedTextField;
 import java.io.File;
 import java.io.IOException;
 import java.net.URI;
+import java.time.LocalDateTime;
 
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -540,8 +541,10 @@ public class Laser {
 		btnNewLine.setMnemonic('e');
 		btnNewLine.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				LocalDateTime ldt = LocalDateTime.now();
+				System.out.print("\n" + "[" + ldt + "]: " + "new line button");
 				String txtCommand = txtPnCommand.getText();
-				txtPnCommand.setText(txtCommand += "ATX loaded \n");
+				txtPnCommand.setText(txtCommand += "\n" + "[" + ldt + "]: " + "bash placeholder line");
 			}
 		});
 		btnNewLine.setBackground(Color.GRAY);
