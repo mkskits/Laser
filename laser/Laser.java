@@ -92,7 +92,7 @@ public class Laser {
 			
 		frmLaser.setTitle("laser v0.24.5");
 		frmLaser.getContentPane().setFont(new Font("Arial", Font.PLAIN, 30));
-		frmLaser.setBounds(100, 100, 451, 1087);
+		frmLaser.setBounds(100, 100, 451, 1189);
 		frmLaser.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			
 		Label statusLabel = new Label("");
@@ -107,7 +107,7 @@ public class Laser {
 		txtPnCommand.setFont(new Font("Arial", Font.PLAIN, 12));
 		txtPnCommand.setCaretColor(Color.GREEN);
 		txtPnCommand.setBackground(Color.DARK_GRAY);
-		txtPnCommand.setBounds(0, 807, 435, 252);
+		txtPnCommand.setBounds(0, 807, 435, 314);
 		frmLaser.getContentPane().add(txtPnCommand);
 		
 		JTextPane txtpnTest2 = new JTextPane();
@@ -316,6 +316,22 @@ public class Laser {
 		JButton btnNexHist = new JButton("NEX HIST");
 		btnNexHist.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				LocalDateTime ldt = LocalDateTime.now();
+				System.out.print("\n" + "[" + ldt + "]: " + "NEX Repo history started");
+				String txtCommand = txtPnCommand.getText();
+				txtPnCommand.setText(txtCommand += "\n" + "[" + ldt + "]: " + "NEX Repo history started");
+				statusLabel.setBackground(Color.RED);
+				try {
+			           Runtime.getRuntime().exec(new String[] {"cmd", "/C", "Start", "C:/SRDEV/B_Bash/NEX_ISIN_retrieve.bat"}); 
+					statusLabel.setBackground(Color.GREEN);
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				String txtCommand2 = txtPnCommand.getText();				
+				LocalDateTime ldt2 = LocalDateTime.now();
+				txtPnCommand.setText(txtCommand2 += "\n" + "[" + ldt2 + "]: " + "NEX Repo history executed");
+				System.out.print("\n" + "[" + ldt2 + "]: " + "NEX Repo history executed");
 			}
 		});
 		btnNexHist.setBounds(346, 682, 89, 23);
