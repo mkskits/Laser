@@ -37,12 +37,12 @@ import java.util.concurrent.TimeUnit;
 import java.awt.Label;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.awt.Component;
+import javax.swing.Box;
 //import com.sun.jna.Library;
 //import com.sun.jna.Native;
 //import com.sun.jna.Platform;
-import com.sun.jna.platform.win32.User32;
-import com.sun.jna.platform.win32.WinDef;
-import com.sun.jna.platform.win32.WinUser;
+
 
 // import java.net.URISyntaxExaception;
 
@@ -90,15 +90,15 @@ public class Laser {
 		frmLaser = new JFrame();
 		frmLaser.setType(Type.UTILITY);
 			
-		frmLaser.setTitle("laser v0.24.5");
+		frmLaser.setTitle("laser v0.25.1");
 		frmLaser.getContentPane().setFont(new Font("Arial", Font.PLAIN, 30));
-		frmLaser.setBounds(100, 100, 451, 1189);
+		frmLaser.setBounds(100, 100, 451, 1374);
 		frmLaser.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			
 		Label statusLabel = new Label("");
 		statusLabel.setBackground(Color.GREEN);
 		statusLabel.setForeground(Color.GREEN);
-		statusLabel.setBounds(27, 714, 17, 17);
+		statusLabel.setBounds(27, 1011, 17, 17);
 		frmLaser.getContentPane().add(statusLabel);
 		
 		JTextPane txtPnCommand = new JTextPane();
@@ -107,12 +107,12 @@ public class Laser {
 		txtPnCommand.setFont(new Font("Arial", Font.PLAIN, 12));
 		txtPnCommand.setCaretColor(Color.GREEN);
 		txtPnCommand.setBackground(Color.DARK_GRAY);
-		txtPnCommand.setBounds(0, 807, 435, 314);
+		txtPnCommand.setBounds(0, 1106, 435, 231);
 		frmLaser.getContentPane().add(txtPnCommand);
 		
 		JTextPane txtpnTest2 = new JTextPane();
 		txtpnTest2.setFocusAccelerator('1');
-		txtpnTest2.setBounds(0, 47, 435, 45);
+		txtpnTest2.setBounds(0, 85, 435, 67);
 		txtpnTest2.setText((String) null);
 		txtpnTest2.setForeground(Color.LIGHT_GRAY);
 		txtpnTest2.setFont(new Font("Arial", Font.PLAIN, 14));
@@ -126,7 +126,7 @@ public class Laser {
 		txtpnTest3.setForeground(Color.LIGHT_GRAY);
 		txtpnTest3.setFont(new Font("Arial", Font.PLAIN, 14));
 		txtpnTest3.setBackground(Color.DARK_GRAY);
-		txtpnTest3.setBounds(0, 93, 435, 45);
+		txtpnTest3.setBounds(0, 153, 435, 67);
 		txtpnTest3.setCaretColor(Color.GREEN);
 		frmLaser.getContentPane().add(txtpnTest3);
 		
@@ -136,7 +136,7 @@ public class Laser {
 		txtpnTest4.setForeground(Color.LIGHT_GRAY);
 		txtpnTest4.setFont(new Font("Arial", Font.PLAIN, 14));
 		txtpnTest4.setBackground(Color.DARK_GRAY);
-		txtpnTest4.setBounds(0, 140, 435, 45);
+		txtpnTest4.setBounds(0, 221, 435, 67);
 		txtpnTest4.setCaretColor(Color.GREEN);
 		frmLaser.getContentPane().add(txtpnTest4);		
 		
@@ -145,7 +145,7 @@ public class Laser {
 		txtpnTest.setToolTipText("test");
 		txtpnTest.setCaretColor(Color.GREEN);
 		
-		txtpnTest.setBounds(0, 0, 435, 45);
+		txtpnTest.setBounds(0, 0, 435, 67);
 		txtpnTest.addKeyListener(new java.awt.event.KeyAdapter() {
 			@Override
 			public void keyPressed(java.awt.event.KeyEvent e) {
@@ -198,7 +198,7 @@ public class Laser {
 		textPaneBBG2.setForeground(Color.LIGHT_GRAY);
 		textPaneBBG2.setFont(new Font("Arial", Font.PLAIN, 12));
 		textPaneBBG2.setBackground(Color.DARK_GRAY);
-		textPaneBBG2.setBounds(0, 766, 151, 29);
+		textPaneBBG2.setBounds(0, 1072, 151, 29);
 		textPaneBBG2.setCaretColor(Color.GREEN);
 		frmLaser.getContentPane().add(textPaneBBG2);
 		
@@ -207,7 +207,7 @@ public class Laser {
 		textPaneBBG1.setForeground(Color.LIGHT_GRAY);
 		textPaneBBG1.setFont(new Font("Arial", Font.PLAIN, 12));
 		textPaneBBG1.setBackground(Color.DARK_GRAY);
-		textPaneBBG1.setBounds(161, 766, 274, 29);
+		textPaneBBG1.setBounds(160, 1072, 274, 29);
 		textPaneBBG1.setCaretColor(Color.GREEN);
 		frmLaser.getContentPane().add(textPaneBBG1);
 		
@@ -218,7 +218,7 @@ public class Laser {
 		textPane.setForeground(Color.LIGHT_GRAY);
 		textPane.setFont(new Font("Arial", Font.PLAIN, 14));
 		textPane.setBackground(Color.DARK_GRAY);
-		textPane.setBounds(0, 188, 435, 45);
+		textPane.setBounds(0, 289, 435, 67);
 		textPane.setCaretColor(Color.GREEN);
 		frmLaser.getContentPane().add(textPane);
 		
@@ -228,7 +228,7 @@ public class Laser {
 		textPane_1.setForeground(Color.LIGHT_GRAY);
 		textPane_1.setFont(new Font("Arial", Font.PLAIN, 14));
 		textPane_1.setBackground(Color.DARK_GRAY);
-		textPane_1.setBounds(0, 236, 435, 45);
+		textPane_1.setBounds(0, 357, 435, 67);
 		textPane_1.setCaretColor(Color.GREEN);
 		frmLaser.getContentPane().add(textPane_1);
 		
@@ -238,7 +238,7 @@ public class Laser {
 		textPane_2.setForeground(Color.LIGHT_GRAY);
 		textPane_2.setFont(new Font("Arial", Font.PLAIN, 14));
 		textPane_2.setBackground(Color.DARK_GRAY);
-		textPane_2.setBounds(0, 284, 435, 45);
+		textPane_2.setBounds(0, 425, 435, 67);
 		textPane_2.setCaretColor(Color.GREEN);
 		frmLaser.getContentPane().add(textPane_2);
 		
@@ -270,7 +270,7 @@ public class Laser {
 				System.out.println(StrPanel1);
 			}
 		});
-		btnAip.setBounds(346, 711, 89, 23);
+		btnAip.setBounds(346, 1008, 89, 23);
 		frmLaser.getContentPane().add(btnAip);
 		
 		JButton btnSecDes = new JButton("SEC DES");
@@ -298,17 +298,17 @@ public class Laser {
 			}
 		});
 		btnSecDes.setMnemonic('l');
-		btnSecDes.setBounds(247, 711, 89, 23);
+		btnSecDes.setBounds(247, 1008, 89, 23);
 		frmLaser.getContentPane().add(btnSecDes);
 		
 		JButton btnTkt = new JButton("TKT");
-		btnTkt.setBounds(148, 711, 89, 23);
+		btnTkt.setBounds(148, 1008, 89, 23);
 		frmLaser.getContentPane().add(btnTkt);
 		
 		txtpnCn = new JTextField();
 		txtpnCn.setForeground(Color.LIGHT_GRAY);
 		txtpnCn.setBackground(Color.DARK_GRAY);
-		txtpnCn.setBounds(0, 712, 21, 20);
+		txtpnCn.setBounds(0, 1009, 21, 20);
 		frmLaser.getContentPane().add(txtpnCn);
 		txtpnCn.setColumns(10);
 		txtpnCn.setText("0");
@@ -334,7 +334,7 @@ public class Laser {
 				System.out.print("\n" + "[" + ldt2 + "]: " + "NEX Repo history executed");
 			}
 		});
-		btnNexHist.setBounds(346, 682, 89, 23);
+		btnNexHist.setBounds(346, 979, 89, 23);
 		frmLaser.getContentPane().add(btnNexHist);
 		
 		JTextPane textPane_3 = new JTextPane();
@@ -351,7 +351,7 @@ public class Laser {
 		textPane_3.setFocusAccelerator('7');
 		textPane_3.setCaretColor(Color.GREEN);
 		textPane_3.setBackground(Color.DARK_GRAY);
-		textPane_3.setBounds(0, 334, 435, 45);
+		textPane_3.setBounds(0, 493, 435, 67);
 		frmLaser.getContentPane().add(textPane_3);
 		
 		JTextPane textPane_4 = new JTextPane();
@@ -370,7 +370,7 @@ public class Laser {
 		textPane_4.setFocusAccelerator('8');
 		textPane_4.setCaretColor(Color.GREEN);
 		textPane_4.setBackground(Color.DARK_GRAY);
-		textPane_4.setBounds(0, 385, 435, 45);
+		textPane_4.setBounds(0, 561, 435, 67);
 		frmLaser.getContentPane().add(textPane_4);
 		
 		JTextPane textPane_5 = new JTextPane();
@@ -389,7 +389,7 @@ public class Laser {
 		textPane_5.setFocusAccelerator('9');
 		textPane_5.setCaretColor(Color.GREEN);
 		textPane_5.setBackground(Color.DARK_GRAY);
-		textPane_5.setBounds(0, 435, 435, 45);
+		textPane_5.setBounds(0, 629, 435, 67);
 		frmLaser.getContentPane().add(textPane_5);
 		
 		JTextPane textPane_6 = new JTextPane();
@@ -407,7 +407,7 @@ public class Laser {
 		textPane_6.setFont(new Font("Arial", Font.PLAIN, 14));
 		textPane_6.setCaretColor(Color.GREEN);
 		textPane_6.setBackground(Color.DARK_GRAY);
-		textPane_6.setBounds(0, 485, 435, 45);
+		textPane_6.setBounds(0, 697, 435, 67);
 		frmLaser.getContentPane().add(textPane_6);
 		
 		JTextPane textPane_7 = new JTextPane();
@@ -425,7 +425,7 @@ public class Laser {
 		textPane_7.setFont(new Font("Arial", Font.PLAIN, 14));
 		textPane_7.setCaretColor(Color.GREEN);
 		textPane_7.setBackground(Color.DARK_GRAY);
-		textPane_7.setBounds(0, 535, 435, 45);
+		textPane_7.setBounds(0, 765, 435, 67);
 		frmLaser.getContentPane().add(textPane_7);
 		
 		JTextPane textPane_8 = new JTextPane();
@@ -443,7 +443,7 @@ public class Laser {
 		textPane_8.setFont(new Font("Arial", Font.PLAIN, 14));
 		textPane_8.setCaretColor(Color.GREEN);
 		textPane_8.setBackground(Color.DARK_GRAY);
-		textPane_8.setBounds(0, 585, 435, 45);
+		textPane_8.setBounds(0, 833, 435, 67);
 		frmLaser.getContentPane().add(textPane_8);
 		
 		JTextPane textPane_9 = new JTextPane();
@@ -459,7 +459,7 @@ public class Laser {
 		textPane_9.setFont(new Font("Arial", Font.PLAIN, 14));
 		textPane_9.setCaretColor(Color.GREEN);
 		textPane_9.setBackground(Color.DARK_GRAY);
-		textPane_9.setBounds(0, 636, 435, 45);
+		textPane_9.setBounds(0, 901, 435, 67);
 		frmLaser.getContentPane().add(textPane_9);
 		
 		JButton btnSrdev = new JButton("SRDEV");
@@ -475,12 +475,12 @@ public class Laser {
 				
 			}
 		});
-		btnSrdev.setBounds(247, 682, 89, 23);
+		btnSrdev.setBounds(247, 979, 89, 23);
 		frmLaser.getContentPane().add(btnSrdev);
 		
 		JLabel lblActive = DefaultComponentFactory.getInstance().createLabel("active");
 		lblActive.setFont(new Font("Tahoma", Font.ITALIC, 12));
-		lblActive.setBounds(10, 686, 40, 14);
+		lblActive.setBounds(10, 983, 40, 14);
 		frmLaser.getContentPane().add(lblActive);
 		
 		JButton btnReporting = new JButton("Reporting");
@@ -496,7 +496,7 @@ public class Laser {
 		});
 		btnReporting.setMnemonic('r');
 		btnReporting.setBackground(Color.GRAY);
-		btnReporting.setBounds(53, 711, 89, 23);
+		btnReporting.setBounds(53, 1008, 89, 23);
 		frmLaser.getContentPane().add(btnReporting);
 		
 		JButton btnNCE = new JButton("NCE");
@@ -512,7 +512,7 @@ public class Laser {
 		});
 		btnNCE.setMnemonic('n');
 		btnNCE.setBackground(Color.GRAY);
-		btnNCE.setBounds(53, 682, 89, 23);
+		btnNCE.setBounds(53, 979, 89, 23);
 		frmLaser.getContentPane().add(btnNCE);
 		
 		JButton btnOraise = new JButton("oraise");
@@ -529,7 +529,7 @@ public class Laser {
 		
 		btnOraise.setMnemonic('o');
 		btnOraise.setBackground(Color.GRAY);
-		btnOraise.setBounds(148, 682, 89, 23);
+		btnOraise.setBounds(148, 979, 89, 23);
 		frmLaser.getContentPane().add(btnOraise);
 		
 		JButton btnAtx = new JButton("ATX");
@@ -550,7 +550,7 @@ public class Laser {
 			}
 		});
 		btnAtx.setBackground(Color.GRAY);
-		btnAtx.setBounds(346, 739, 89, 23);
+		btnAtx.setBounds(346, 1036, 89, 23);
 		frmLaser.getContentPane().add(btnAtx);
 		
 		JButton btnNewLine = new JButton("new line");
@@ -564,7 +564,7 @@ public class Laser {
 			}
 		});
 		btnNewLine.setBackground(Color.GRAY);
-		btnNewLine.setBounds(247, 739, 89, 23);
+		btnNewLine.setBounds(247, 1036, 89, 23);
 		frmLaser.getContentPane().add(btnNewLine);
 		
 		JButton btnTiles = new JButton("bash");
@@ -572,14 +572,7 @@ public class Laser {
 			public void actionPerformed(ActionEvent e) {
 				// placeholder today
 				try {
-					WinDef.HWND hWnd = User32.INSTANCE.FindWindow("ConsoleWindowClass", "C:\\WINDOWS\\system32\\cmd.exe");
-					// WinDef.HWND hWnd = User32.INSTANCE.FindWindow("SunAwtFrame", "[PRODUCTION] Firebird - Version 1.5.0.7");
-					User32.INSTANCE.ShowWindow(hWnd, WinUser.SW_RESTORE);
-					User32.INSTANCE.SetForegroundWindow(hWnd);
-					String strCmnd = new String();
-					strCmnd = txtPnCommand.getText();
-					strCmnd = strCmnd + "\n" + "bash activated";  
-					txtPnCommand.setText(strCmnd);							
+						
 				} catch (Exception e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
@@ -588,7 +581,7 @@ public class Laser {
 		});
 		btnTiles.setMnemonic('b');
 		btnTiles.setBackground(Color.GREEN);
-		btnTiles.setBounds(148, 739, 89, 23);
+		btnTiles.setBounds(148, 1036, 89, 23);
 		frmLaser.getContentPane().add(btnTiles);
 		
 		JButton btnBbgDataDump = new JButton("BBG Data");
@@ -613,7 +606,7 @@ public class Laser {
 		btnBbgDataDump.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		btnBbgDataDump.setMnemonic('b');
 		btnBbgDataDump.setBackground(Color.GREEN);
-		btnBbgDataDump.setBounds(53, 739, 89, 23);
+		btnBbgDataDump.setBounds(53, 1036, 89, 23);
 		frmLaser.getContentPane().add(btnBbgDataDump);
 			
 		txtpnTest.addKeyListener(new java.awt.event.KeyAdapter() {
