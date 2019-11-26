@@ -102,6 +102,7 @@ public class Laser {
 		frmLaser.getContentPane().add(statusLabel);
 		
 		JTextPane txtPnCommand = new JTextPane();
+		txtPnCommand.setFocusAccelerator('w');
 		txtPnCommand.setText((String) null);
 		txtPnCommand.setForeground(Color.LIGHT_GRAY);
 		txtPnCommand.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -608,6 +609,22 @@ public class Laser {
 		btnBbgDataDump.setBackground(Color.GREEN);
 		btnBbgDataDump.setBounds(53, 1036, 89, 23);
 		frmLaser.getContentPane().add(btnBbgDataDump);
+		
+		JButton btnNewButton = new JButton("T");
+		btnNewButton.setMnemonic('t');
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				// 	PLACEHOLDER FOR ADDITIONAL SWT WINDOW BUTTON
+				try {
+					child1 ww2 = new child1();
+					ww2.open();
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+			}
+		});
+		btnNewButton.setBounds(0, 1038, 44, 23);
+		frmLaser.getContentPane().add(btnNewButton);
 			
 		txtpnTest.addKeyListener(new java.awt.event.KeyAdapter() {
 			@Override
