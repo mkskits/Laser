@@ -37,11 +37,6 @@ import java.util.concurrent.TimeUnit;
 import java.awt.Label;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.Component;
-import javax.swing.Box;
-//import com.sun.jna.Library;
-//import com.sun.jna.Native;
-//import com.sun.jna.Platform;
 
 
 // import java.net.URISyntaxExaception;
@@ -199,7 +194,7 @@ public class Laser {
 		textPaneBBG2.setForeground(Color.LIGHT_GRAY);
 		textPaneBBG2.setFont(new Font("Arial", Font.PLAIN, 12));
 		textPaneBBG2.setBackground(Color.DARK_GRAY);
-		textPaneBBG2.setBounds(0, 1072, 151, 29);
+		textPaneBBG2.setBounds(53, 1072, 98, 29);
 		textPaneBBG2.setCaretColor(Color.GREEN);
 		frmLaser.getContentPane().add(textPaneBBG2);
 		
@@ -533,20 +528,18 @@ public class Laser {
 		btnOraise.setBounds(148, 979, 89, 23);
 		frmLaser.getContentPane().add(btnOraise);
 		
-		JButton btnAtx = new JButton("ATX");
+		JButton btnAtx = new JButton("BBG FULL");
 		btnAtx.setMnemonic('t');
 		btnAtx.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				statusLabel.setBackground(Color.RED);
-				Desktop d = Desktop.getDesktop();
 				try {
-				    d.browse(new URI("C:/temp/BlackRock/s5mkilch/packagedApps/SWISSRE/ATXL/Bin(x86)/ATX.xll"));
-				    statusLabel.setBackground(Color.GREEN);
-				    txtPnCommand.setText("ATX loaded");
-				} catch (Exception f){
-					System.out.print("error in ATX");
-					txtPnCommand.setText("Error in loading ATX");
-					statusLabel.setBackground(Color.ORANGE);
+					// child4 ww4 = new child4();
+					child4.main();
+					System.out.println("Child4");
+					// child4.close4();
+					
+				} catch (Exception e1) {
+					e1.printStackTrace();
 				}
 			}
 		});
@@ -580,7 +573,7 @@ public class Laser {
 				}
 			}
 		});
-		btnTiles.setMnemonic('b');
+		btnTiles.setMnemonic('c');
 		btnTiles.setBackground(Color.GREEN);
 		btnTiles.setBounds(148, 1036, 89, 23);
 		frmLaser.getContentPane().add(btnTiles);
@@ -610,22 +603,6 @@ public class Laser {
 		btnBbgDataDump.setBounds(53, 1036, 89, 23);
 		frmLaser.getContentPane().add(btnBbgDataDump);
 		
-		JButton btnNewButton = new JButton("T");
-		btnNewButton.setMnemonic('t');
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				// 	PLACEHOLDER FOR ADDITIONAL SWT WINDOW BUTTON
-				try {
-					child1 ww2 = new child1();
-					ww2.open();
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
-			}
-		});
-		btnNewButton.setBounds(0, 1038, 44, 23);
-		frmLaser.getContentPane().add(btnNewButton);
-			
 		txtpnTest.addKeyListener(new java.awt.event.KeyAdapter() {
 			@Override
 			public void keyPressed(java.awt.event.KeyEvent e) {
