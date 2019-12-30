@@ -97,6 +97,14 @@ public class Laser {
 		frmLaser.getContentPane().add(statusLabel);
 		
 		JTextPane txtPnCommand = new JTextPane();
+		txtPnCommand.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				if(e.getKeyCode() == 27)
+					txtPnCommand.setText(null);
+			}
+		});
+		
 		txtPnCommand.setFocusAccelerator('w');
 		txtPnCommand.setText((String) null);
 		txtPnCommand.setForeground(Color.LIGHT_GRAY);
